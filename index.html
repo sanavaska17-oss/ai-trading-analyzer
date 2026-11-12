@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Trading Analyzer</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#0b1220;color:#fff;font-family:Arial,sans-serif;padding:20px}
+main{max-width:600px;margin:auto}
+header{font-size:25px;font-weight:bold;margin:15px 0 25px}
+.card{background:#172338;border:1px solid #30415c;border-radius:16px;padding:20px;margin-bottom:15px}
+.status{color:#fbbf24;font-size:14px}
+.signal{font-size:30px;font-weight:bold;margin:20px 0}
+.muted{color:#9aabc4;font-size:14px;line-height:1.5}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.metric{font-size:25px;font-weight:bold;margin-top:8px}
+button{width:100%;padding:15px;border:0;border-radius:12px;background:#2563eb;color:white;font-size:16px;font-weight:bold}
+</style>
+</head>
+<body>
+<main>
+<header>AI Trading Analyzer</header>
+
+<section class="card">
+<div class="status">● ДЕМО-РЕЖИМ</div>
+<div class="signal">ОЖИДАНИЕ</div>
+<p class="muted">Сервер и рыночные данные пока не подключены. Реальные сигналы пока не рассчитываются.</p>
+</section>
+
+<div class="grid">
+<section class="card">
+<div class="muted">Всего сигналов</div>
+<div class="metric" id="total">0</div>
+</section>
+<section class="card">
+<div class="muted">Результат</div>
+<div class="metric">—</div>
+</section>
+</div>
+
+<section class="card">
+<h3>История сигналов</h3>
+<p class="muted" id="history">Пока записей нет.</p>
+</section>
+
+<section class="card">
+<h3>Подключение данных</h3>
+<p class="muted">Следующий этап — подключить безопасный сервер OTCharts. API-ключ нельзя размещать в этом файле.</p>
+</section>
+
+<p class="muted">Инструмент предназначен только для анализа. Он не открывает сделки и не гарантирует прибыль.</p>
+</main>
+</body>
+</html>
+  
